@@ -14,16 +14,21 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
+            color: #1a1a1a;
+            background: url('lab-background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
         }
 
         .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.65) 0%, rgba(42, 82, 152, 0.65) 100%);
+            backdrop-filter: blur(8px);
             color: white;
             padding: 3rem 2rem;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            border-bottom: 3px solid rgba(255, 255, 255, 0.3);
         }
 
         .profile-photo {
@@ -46,18 +51,21 @@
         .header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            font-weight: 600;
+            font-weight: 700;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
         }
 
         .header .title {
             font-size: 1.2rem;
-            opacity: 0.9;
+            opacity: 0.95;
             margin-bottom: 1rem;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
         }
 
         .contact-info {
             margin-top: 1rem;
             font-size: 0.95rem;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
         }
 
         .contact-info a {
@@ -78,12 +86,14 @@
         }
 
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(8px);
             padding: 2.5rem;
             margin: 2rem 0;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
             animation: fadeIn 0.6s ease-in;
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         @keyframes fadeIn {
@@ -97,22 +107,25 @@
             margin-bottom: 1.5rem;
             padding-bottom: 0.5rem;
             border-bottom: 3px solid #2a5298;
+            font-weight: 700;
         }
 
         .section h3 {
             color: #2a5298;
             font-size: 1.3rem;
             margin: 1.5rem 0 1rem;
+            font-weight: 600;
         }
 
         .profile-summary {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #555;
+            color: #2c2c2c;
+            font-weight: 500;
         }
 
         .highlight-box {
-            background: #f0f4f8;
+            background: rgba(240, 244, 248, 0.85);
             padding: 1.5rem;
             border-radius: 6px;
             margin: 1rem 0;
@@ -142,6 +155,7 @@
         li {
             margin-bottom: 0.8rem;
             line-height: 1.7;
+            color: #2c2c2c;
         }
 
         .publications-list {
@@ -152,15 +166,16 @@
         .publications-list li {
             padding: 1rem;
             margin-bottom: 1rem;
-            background: #f9f9f9;
+            background: rgba(249, 249, 249, 0.90);
             border-radius: 4px;
             border-left: 3px solid #2a5298;
             transition: transform 0.2s;
+            color: #2c2c2c;
         }
 
         .publications-list li:hover {
             transform: translateX(5px);
-            background: #f0f4f8;
+            background: rgba(240, 244, 248, 0.95);
         }
 
         .stats {
@@ -238,7 +253,7 @@
         <section class="section">
             <h2>Profile</h2>
             <div class="profile-summary">
-                <p>A dedicated Lecturer with <strong>30 years of teaching experience</strong> and <strong>8 years of research experience</strong>, combining extensive academic expertise with newly acquired skills and an insatiable intellectual curiosity. Specialized in mining hidden gems within large sets of research papers and contributing significantly to the fields of organic, environmental, and medicinal chemistry.</p>
+                <p>A dedicated Lecturer with <strong>30 years of teaching experience</strong> and <strong>12 years of research experience</strong>, combining extensive academic expertise with newly acquired skills and an insatiable intellectual curiosity. Specialized in mining hidden gems within large sets of research papers and contributing significantly to the fields of organic, environmental, and medicinal chemistry.</p>
             </div>
             <div class="stats">
                 <div class="stat-card">
@@ -246,15 +261,15 @@
                     <span class="stat-label">Years of Teaching</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">8</span>
+                    <span class="stat-number">12</span>
                     <span class="stat-label">Years of Research</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">13</span>
+                    <span class="stat-number">14</span>
                     <span class="stat-label">Research Papers</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">5</span>
+                    <span class="stat-number">7</span>
                     <span class="stat-label">Journal Reviewer</span>
                 </div>
             </div>
@@ -293,17 +308,17 @@
 
             <h3>Research Experience</h3>
             <ul>
-                <li>8 years of intensive research in Environmental Chemistry and Medicinal Chemistry</li>
-                <li>Published <strong>13 research papers</strong> in internationally reputed journals</li>
+                <li>12 years of intensive research in Environmental Chemistry and Medicinal Chemistry</li>
+                <li>Published <strong>14 research papers</strong> in internationally reputed journals</li>
                 <li>Presented papers at state, national, and international level seminars</li>
-                <li>Active reviewer for <strong>5 international journals</strong></li>
+                <li>Active reviewer for <strong>7 international journals</strong></li>
                 <li>Published <strong>2 book chapters</strong> with BP International Publisher</li>
             </ul>
 
             <h3>Other Contributions</h3>
             <ul>
                 <li>Published articles on spiritual and socio-economic issues in various magazines</li>
-                <li>Contributed a book chapter in "Challenging Issues on Environment and Earth Science, Vol-8" by BP International Publisher</li>
+                <li>Contributed book chapters in "Challenging Issues on Environment and Earth Science" and "Emerging Challenges in Environment and Earth Science" by BP International Publisher</li>
             </ul>
         </section>
 
@@ -313,6 +328,8 @@
             
             <h3>Selected Research Articles</h3>
             <ul class="publications-list">
+                <li><strong>The qualitative assessment of water quality of the river Salandi by applying three water quality indices, Bhadrak odisha india.</strong><br>
+                <em>IOSR Journal of Environmental Science, Toxicology and Food Technology, 19(13) December (2025), 84-93.</em></li>
                 <li>The Study of Physico-Chemical and Bacteriological Parameters of River Salandi and Assessment of Water Quality Index from Hadagada Dam to Akhandalmani, Bhadrak, Odisha, India</li>
                 <li>The Study of Water Quality of the River Salandi by Using Modified Canadian Council of Ministers of the Environment Water Quality Index Method, Bhadrak, Odisha, India</li>
                 <li>Assessment of Pollution Load in Terms of Water Quality Index of Salandi River in the Command Area of Hadagada Dam and Its Downstream, Bhadrak, Odisha</li>
@@ -323,8 +340,10 @@
 
             <h3>Book Chapters</h3>
             <ul class="publications-list">
-                <li>Investigation and Assessment of Water Quality Index of River Salandi at Hadagada Dam and Its Down Stream up to Akhandalmani, Bhadrak, Odisha, India</li>
-                <li>Assessment of Water Quality of River Salandi by using Modified Canadian Council of Ministers of the Environmental Water Quality Index Method in Bhadrak, Odisha, India</li>
+                <li><strong>Investigation and Assessment of Water Quality Index of River Salandi at Hadagada Dam and Its Down Stream up to Akhandalmani, Bhadrak, Odisha, India</strong><br>
+                <em>Published in "Challenging Issues on Environment and Earth Science, Vol-8" by BP International Publisher</em></li>
+                <li><strong>Assessment of Water Quality of River Salandi by using Modified Canadian Council of Ministers of the Environmental Water Quality Index Method in Bhadrak, Odisha, India</strong><br>
+                <em>Published in "Emerging Challenges in Environment and Earth Science, Vol-5" by BP International Publisher</em></li>
             </ul>
         </section>
 
